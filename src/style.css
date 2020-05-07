@@ -1,0 +1,23 @@
+body {
+    background: url('./image/bg.jpg');
+}
+#root div{
+    text-align: center;
+    transform: rotate(0deg);
+    font-size: 26px;
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 150px;
+    border:1px solid #000
+}
+.a{                 /* 冗余css */
+    color: black;     
+}
+
+.b{                 /* 冗余css */
+    width: 50px;
+    height: 50px;
+    background: yellow;
+}
