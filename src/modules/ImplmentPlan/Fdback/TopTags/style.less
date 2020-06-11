@@ -1,0 +1,27 @@
+.main{
+    border-bottom: 1px #e8e8e8 solid;
+    padding: 0 20px;
+    .tabMenu{
+        height: 40px;
+        display: flex;
+        display: -ms-flexbox; /* IE 10 */
+        align-items: center;
+        -ms-flex-align: center;/* IE 10 */
+    }
+    .search {
+        padding-top:8px;
+        float: right;
+        padding-right: 22px;  
+        display:flex;
+        display: -ms-flexbox; /* IE 10 */
+        justify-content: flex-end;
+        -ms-flex-pack: end;/* IE 10 */
+        input{width:160px;}
+        :global{
+            .ant-input{
+                height:25px;
+            }
+        } 
+    }
+    
+}

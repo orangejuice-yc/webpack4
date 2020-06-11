@@ -1,0 +1,45 @@
+.container {
+  margin: 0 15px 0 0;
+  width: 100%;
+
+  .h3 {
+    font-weight: 700;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+.tools {
+  display: flex;
+  & > div {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    & > span {
+      margin-right: 10px;
+      flex-shrink: 0;
+      width: 120px;
+      text-align: center;;
+    }
+  }
+}
+@import "../../../../../../static//less/rightTable";
+.main {
+    :global {
+        .ant-table-pagination.ant-pagination {
+            float: left !important;
+            min-width: 440px;
+            margin-top: 30px;
+        }
+
+        .ant-table-pagination.ant-pagination {
+            margin: 16px 0 16px 20px;
+        }
+    }
+    .search {
+        float: right;
+        padding-right: 22px;    
+    }
+    .rightTopTogs{
+      padding-left: 0 !important;
+    }
+}

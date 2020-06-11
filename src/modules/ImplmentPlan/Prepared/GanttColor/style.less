@@ -1,0 +1,42 @@
+.main{
+    .colorCurrent{
+        display: flex;
+        display: -ms-flexbox; /* IE 10 */
+        line-height: 32px;
+        width:50%;
+        margin: 0 auto 15px;
+        span{
+            display: inline-block;
+            width: 60px;
+            height:32px;
+            border-radius: 4px;
+        }
+    }
+    .colorPicker{
+        background-color:#000;
+        display: flex;
+        display: -ms-flexbox; /* IE 10 */
+        line-height:1px;
+        margin-bottom: 3px;
+        .cpLeft{
+            padding:0 20px;
+            width: 58px;
+        }
+        span{
+            display: inline-block;
+            width:18px;
+            height:18px;
+            background-color: #fff;
+            margin-right: 3px;
+            margin-bottom: 3px;
+            cursor: pointer;
+        }
+        span:hover{
+            outline: 1px solid #fff;
+        }
+        .cpRight{
+            width: calc(100% - 58px);
+            line-height: 1px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../../../static/less/rightTableButton.less';
+.main{
+    .myProgress{
+       position: relative;
+       width: 100px;
+       :global{
+        .ant-progress-outer{
+            padding-right: 0;
+            margin-right: 0;
+          
+        }
+        .ant-progress-success-bg, .ant-progress-bg {
+            height: 19px !important;
+        }
+        .ant-progress-inner{
+            border: 1px solid #1890ff;
+        }
+        .ant-progress-text{
+            position: absolute;
+    top: 6px;
+    right: 22%;
+    font-weight: 600;
+        }
+       }
+    }
+}

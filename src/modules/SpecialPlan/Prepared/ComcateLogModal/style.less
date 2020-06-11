@@ -1,0 +1,38 @@
+.main {
+  .content {
+    padding: 0 20px;
+  }
+
+  .tableMain {
+    .search {
+      margin-bottom: 10px;
+    }
+
+    padding:20px;
+  }
+
+  :global{
+    
+    .ant-table-small > .ant-table-content > .ant-table-body{
+      margin: 0;
+      overflow: auto;
+    }
+    .ant-table-body{
+      overflow: auto !important;
+    }
+    .ant-table-body td{
+      white-space: nowrap;    
+      overflow: hidden;       
+      text-overflow: ellipsis;
+    }
+    table{
+      table-layout:fixed; 
+  }
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+      overflow-x:scroll;
+      overflow-y: auto;
+    }
+  
+  }
+ 
+}

@@ -1,0 +1,20 @@
+@import "../../../../static/less/rightTable";
+.main{
+    :global{
+        .ant-table-small.ant-table-bordered {
+            border-top:none !important;
+        }
+        .ant-table thead th {
+            background-color: #fafafa !important;
+        }
+        .ant-table-small > .ant-table-content > .ant-table-body{
+            margin:0;
+        }
+        .spsColumns{
+            background: url(../../../../static/images/dot.png) no-repeat right top;
+        }
+        .ant-table-content > .ant-table-body tr:hover td.spsColumns{
+            background: url(../../../../static/images/dot.png) #e6f7ff no-repeat right top !important;
+        }
+    }
+}

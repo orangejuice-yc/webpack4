@@ -1,0 +1,220 @@
+.main{
+    width:100%;
+    height:100%;
+    background: rgb(247, 247, 247);
+    .header{
+        width:98%;
+        height:15%;
+        margin:0 auto;
+        .headerBox1{
+            width:100%;
+            height:50%;
+            .headerBox{
+                width:7%;
+                height:100%;
+                float: right;
+            }  
+            .headerBox>i:nth-of-type(1){
+                display: inline-block;
+                width:35%;
+                height:25%;
+                border-radius: 10px;
+            }
+            .headerBox>i:nth-of-type(2){
+                font-style: normal;
+                display: inline-block;
+                width:65%;
+                height:25%;
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .headerBox::before{
+                content:'';
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+            }          
+            .spanBox1>i:nth-of-type(1){
+                background: greenyellow;
+            }           
+            .spanBox2>i:nth-of-type(1){
+                background: blue;
+            }      
+            .spanBox3>i:nth-of-type(1){
+                background: gold;
+            }       
+            .spanBox4>i:nth-of-type(1){
+                background: red;
+            }
+        }
+        .headerBox2{
+            display: table;
+            width:90%;
+            height:50%;
+            float: right;    
+            font-size:16px;
+            font-weight: bold;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .headerBox2>div{
+            display: table-cell;
+            height:100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .headerBox2>div:nth-of-type(1){
+            width:50%;
+        }
+        .headerBox2>div:nth-of-type(2){
+            width:25%;
+        }
+        .headerBox2>div:nth-of-type(3){
+            width:25%;
+        }
+    }
+    :global{
+    .ant-spin-nested-loading{
+        width:100%;
+        height:100%;
+    }
+    .ant-spin-container{
+        width:100%;
+        height:100%;
+    }}
+    .content{
+        width:100%;
+        height:100%;
+        .contentBox1{
+            display:table;             
+            .contentLeft1{
+                width:10%;
+                vertical-align:middle;
+                text-align: center;
+                display:table-cell;
+            } 
+            .contentRight1{
+                width:90%;
+                background: #fff;
+                border-radius: 5px;
+                display:table-cell;
+                vertical-align:middle;
+                text-align: center;
+            }
+        }
+    }
+    .content>div{
+        width:100%;
+        border-radius: 5px;
+        margin:10px 0;
+    }
+    .content>div>div:nth-of-type(1)>div{
+        display:inline-block;  
+        width:80px;
+        height:80px;
+        border-radius: 40px;
+        font-size: 12px;
+        color:#fff;
+        position: relative;
+    } 
+    .content>div>div:nth-of-type(1)>div>div{
+        width:76px;
+        height:76px;
+        border-radius: 38px;
+        position: absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        margin:auto;
+    }  
+    .content>div>div:nth-of-type(1)>div>div>div{
+        width:64px;
+        height:64px;
+        border-radius: 32px;
+        text-align: center;
+        line-height: 64px;
+        position: absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        margin:auto;
+    }  
+}
+.contentItem>div{
+    float: left;
+}
+.contentItem{
+    width:98%;
+    height:45px;
+    position: absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        margin:auto;
+    .contentItem1{
+        width:50%;
+        height:45px;
+        line-height: 45px;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        padding-left:5px;
+    }
+    .contentItem2_1{
+        width:25%;
+        height:45px;
+        position: relative;
+    }
+    .contentItem2_1 .contentItem2{
+        width:100%;
+        height:13px;
+        background: rgb(226, 223, 223);
+        border-radius: 8px;
+        position: absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        margin:auto;
+        .contentItem4{
+            height:13px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 13px;
+            color:#fff;
+        }
+    }
+    .contentItem3{
+        width:25%;
+        height:45px;
+        text-align: center;
+        line-height: 45px;
+        font-weight: bold;
+        color:goldenrod
+    }
+}
+.listItem{
+    height:50px;
+    position: relative;
+}
+.contentItem:hover{
+    background: rgb(243, 243, 243);
+    cursor: pointer;
+}
+.toolTipBox{   
+    :global{
+        .ant-tooltip-content{
+            .ant-tooltip-inner{
+                width:235px;
+                color:rgba(0, 0, 0, 0.9);
+                font-weight: bold;
+                }           
+        }
+    }  
+}

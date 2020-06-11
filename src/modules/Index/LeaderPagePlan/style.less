@@ -1,0 +1,30 @@
+.main{
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    background:rgb(239,240,243);
+    .Card{
+        margin:2px;
+        float: left;
+    }
+    :global{
+        .ant-card{
+            border-radius: 10px
+        }
+        .ant-card-head{
+            border-bottom: none
+        }
+        .ant-card-body{
+            padding:0;
+            height:75%
+        }
+    }
+    .ProgressPlanning{
+        :global{
+            .ant-card-body{
+                width:100%;
+                height:90%;
+            }           
+        }
+    }   
+}

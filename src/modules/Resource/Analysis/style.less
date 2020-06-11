@@ -1,0 +1,99 @@
+
+  .main{
+    display:flex;
+    justify-content: space-between;
+    height: 100%;
+    .leftMain{width: 100%;overflow: auto}
+    height: 100%;
+    section{
+      width: 100%;
+      height: 100%;
+     
+      position: relative;
+      .time{
+        position: absolute;
+        top:11px;
+        width: 150px;
+        left: 30px;
+        color: #1890ff;
+      }
+      :global{
+        .ant-fullcalendar-fullscreen .ant-fullcalendar-header .ant-radio-group {
+        
+          display: none;
+      }
+        .ant-fullcalendar-header {
+          padding: 6px 0;
+          text-align: center;
+          margin-bottom: 30px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+        .ant-fullcalendar-fullscreen .ant-fullcalendar-column-header{
+          text-align: center;
+          padding-right: 0; 
+        }
+        .ant-fullcalendar{
+          width: 80%;
+          margin: 0 auto;
+        }
+        .ant-fullcalendar-date{
+          height: 40px;
+          box-shadow: 1px 1px 1px skyblue;
+          margin-bottom: 10px;
+          background-color: #e6f7ff;
+          border-top:none
+        }
+        .ant-fullcalendar-value{
+          text-align: center;
+        }
+        .ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-month, .ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-date{
+          background-color: red
+        }
+        .ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value, .ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-value{
+          color: rgba(0, 0, 0, 0.65);
+        }
+      }
+    }
+    :global{
+      .ant-table td { white-space: nowrap; }
+      .ant-table thead{white-space: nowrap}
+    }
+    :global{
+      .ant-table td,.ant-table th { white-space: nowrap; }
+    }
+   .normalDate{
+    background-color: #cfe9ff;
+    text-align: center;
+    padding: 8px 10px;
+    margin: 1px;
+    box-shadow: 1px 1px 1px #f2f2f2;
+    cursor: pointer;
+   }
+   .usedlDate{
+    background-color: rgb(92, 182, 255);
+    text-align: center;
+    padding: 8px 10px;
+    margin: 1px;
+    box-shadow: 1px 1px 1px #f2f2f2;
+    cursor: pointer;
+   }
+   .conflictDate{
+    background-color: rgb(255, 104, 105);
+    text-align: center;
+    padding: 8px 10px;
+    margin: 1px;
+    box-shadow: 1px 1px 1px #f2f2f2;
+    cursor: pointer;
+   }
+   .tableStyle{
+     overflow: auto;
+     height: calc(100% - 360px);
+     padding: 0 10px;
+     :global{
+      .ant-table-empty .ant-table-body {
+        overflow:  inherit !important;
+    }
+     }
+   }
+  }
